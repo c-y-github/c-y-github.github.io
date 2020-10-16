@@ -35,3 +35,84 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+#git笔记
+---
+* Git 会将**当前版本文件**与仓库中的**上一个版本文件**进行对比，并把所有的**差异的文件**打包到一起作为一个**提交记录**`(或称快照)`。
+<br>
+
+* Git 中文件的三种状态 ***已提交(committed)、已修改(modified) 和 已暂存(staged)***
+    * **已修改**表示修改了文件，但**还没保存**到数据库中。
+    * **已暂存**表示对一个已修改文件的当前版本**做了标记**，使之包含在下次提交的快照中。
+    * **已提交**表示数据**已经保存在**本地数据库中。
+<br>
+
+* ***工作目录、暂存区域 和 Git 仓库***
+    * **工作区**是对**项目的某个版本独立提取出来的内容**。这些从 **Git 仓库**的压缩数据库中提取出来的文件，放在**磁盘上供你使用或修改**。
+    * **暂存区**是一个文件，保存了**下次将要提交的**文件列表信息，一般在 Git 仓库目录中。 `(按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”)`
+    * **Git 仓库**目录是 Git 用来保存**项目的元数据和对象数据库**的地方。 这是 **Git 中最重要**的部分，从其它计算机**克隆仓库时，复制的就是这里的数据。**
+<br>
+
+* Git **工作流程**如下：
+    * 在**工作区**中**修改文件**。
+    * 将你**想要下次提交的更改选择性地暂存**，这样只会将**更改的部分**添加到暂存区。
+    * **提交**更新，找到**暂存区的文件**，将**快照存储到Git 仓库目录**。
+
+
+<br>
+
+&emsp; `git commmit` 　　 　 　 **提交**
+&emsp; `git branch 分支名` 　　 **新建** ***分支***
+&emsp; `git checkout 分支名` 　 **切换到** ***分支***
+&emsp; `git merge 分支名`　　　**将** ***分支*** **合并到** ***当前所在分支*** [^1]
+&emsp; `git rebase 分支名` 　 　**将** ***当前所在分支*** **复制到** ***分支*** [^2]
+&emsp; `git log`　　　　　　　**查看提交日志**
+<br>
+
+
+---
+
+`git config --global user.name "cy"`
+**设置git用户名**
+`git config --global user.email "2305554859@pp.com"`
+**设置git用户邮箱**
+`git config --global user.name`
+**查看git用户名**
+`git config --global user.email`
+**查看git用户邮箱**
+
+`git reflog` 　 　　 　　　　**查看所有版本**
+`git reset --hard HEAD^`　　 **回退到上一版本**
+`git reset --hard 版本号`　　**回退到指定版本**
+`git reset 版本号`　　　　　 **比较当前和指定版本的不同**
+
+>HEAD 代表当前版本    HEAD^ 代表上一版本   HEAD^^  代表再上一个版本 依次类推
+
+`git branch -a` 　　 　 　　**查看所有** ***分支***
+`git checkout 分支名` 　　　**切换到** ***分支***
+`git checkout -b 分支名`　　**创建同时切换到** ***分支***
+`git branch -D 分支名`　　　**删除** ***分支***
+`git merge 分支名`　 　 　 　**合并** ***分支***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[^1]: 此时**当前分支**包括**两个分支**上的修改`(记录)`，而**另一个分支**还是只包括**另一个分支的修改`(记录)`**不变。此时**当前分支**指向的记录`(修改)`将有**两个父记录`(修改)`**
+![git merge](/assets/2020-10-11__9-56-08.png)
+<br>
+
+[^2]: 此时**当前分支**包括**两个分支**上的修改`(记录)`，而**另一个分支**还是只包括**另一个分支的修改`(记录)`**不变。此时**当前分支**与另一分支不同的记录
+![git rebase](/assets/2020-10-11__10-07-14.png)
