@@ -140,19 +140,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-git笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/17/hello-world/">git笔记</a>
+      <a class="article-title" href="/2020/10/17/git%E7%AC%94%E8%AE%B0/">git笔记</a>
     </h1>
   
 
         
-        <a href="/2020/10/17/hello-world/" class="archive-article-date">
+        <a href="/2020/10/17/git%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2020-10-17T01:28:45.170Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-17</time>
 </a>
         
@@ -160,24 +160,21 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="git笔记"><a href="#git笔记" class="headerlink" title="#git笔记"></a>#git笔记</h2><ul>
+        <ul>
 <li><p>Git 会将<strong>当前版本文件</strong>与仓库中的<strong>上一个版本文件</strong>进行对比，并把所有的<strong>差异的文件</strong>打包到一起作为一个<strong>提交记录</strong><code>(或称快照)</code>。</p>
-<br>
 </li>
 <li><p>Git 中文件的三种状态 <strong><em>已提交(committed)、已修改(modified) 和 已暂存(staged)</em></strong></p>
 <ul>
 <li><strong>已修改</strong>表示修改了文件，但<strong>还没保存</strong>到数据库中。</li>
 <li><strong>已暂存</strong>表示对一个已修改文件的当前版本<strong>做了标记</strong>，使之包含在下次提交的快照中。</li>
-<li><strong>已提交</strong>表示数据<strong>已经保存在</strong>本地数据库中。<br>
-</li>
+<li><strong>已提交</strong>表示数据<strong>已经保存在</strong>本地数据库中。</li>
 </ul>
 </li>
 <li><p><strong><em>工作目录、暂存区域 和 Git 仓库</em></strong></p>
 <ul>
 <li><strong>工作区</strong>是对<strong>项目的某个版本独立提取出来的内容</strong>。这些从 <strong>Git 仓库</strong>的压缩数据库中提取出来的文件，放在<strong>磁盘上供你使用或修改</strong>。</li>
 <li><strong>暂存区</strong>是一个文件，保存了<strong>下次将要提交的</strong>文件列表信息，一般在 Git 仓库目录中。 <code>(按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”)</code></li>
-<li><strong>Git 仓库</strong>目录是 Git 用来保存<strong>项目的元数据和对象数据库</strong>的地方。 这是 <strong>Git 中最重要</strong>的部分，从其它计算机<strong>克隆仓库时，复制的就是这里的数据。</strong><br>
-</li>
+<li><strong>Git 仓库</strong>目录是 Git 用来保存<strong>项目的元数据和对象数据库</strong>的地方。 这是 <strong>Git 中最重要</strong>的部分，从其它计算机<strong>克隆仓库时，复制的就是这里的数据。</strong></li>
 </ul>
 </li>
 <li><p>Git <strong>工作流程</strong>如下：</p>
@@ -188,11 +185,13 @@
 </ul>
 </li>
 </ul>
+<hr>
 <br>
 
 <p>&emsp; <code>git commmit -a -m 注释</code>　　<strong>提交</strong><br>&emsp; <code>git branch 分支名</code> 　　 　　<strong>新建</strong> <strong><em>分支</em></strong><br>&emsp; <code>git checkout 分支名</code> 　 　　<strong>切换到</strong> <strong><em>分支</em></strong><br>&emsp; <code>git merge 分支名</code>　　　　　<strong>将</strong> <strong><em>分支</em></strong> <strong>合并到</strong> <strong><em>当前所在分支</em></strong> <a href="%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E5%8C%85%E6%8B%AC**%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AF**%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60%EF%BC%8C%E8%80%8C**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF**%E8%BF%98%E6%98%AF%E5%8F%AA%E5%8C%85%E6%8B%AC**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60**%E4%B8%8D%E5%8F%98%E3%80%82%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E6%8C%87%E5%90%91%E7%9A%84%E8%AE%B0%E5%BD%95%60(%E4%BF%AE%E6%94%B9)%60%E5%B0%86%E6%9C%89**%E4%B8%A4%E4%B8%AA%E7%88%B6%E8%AE%B0%E5%BD%95%60(%E4%BF%AE%E6%94%B9)%60**">^1</a><br>&emsp; <code>git rebase 分支名</code> 　 　　　<strong>将</strong> <strong><em>当前所在分支</em></strong> <strong>复制到</strong> <strong><em>分支</em></strong> <a href="%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E5%8C%85%E6%8B%AC**%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AF**%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60%EF%BC%8C%E8%80%8C**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF**%E8%BF%98%E6%98%AF%E5%8F%AA%E5%8C%85%E6%8B%AC**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60**%E4%B8%8D%E5%8F%98%E3%80%82%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E4%B8%8E%E5%8F%A6%E4%B8%80%E5%88%86%E6%94%AF%E4%B8%8D%E5%90%8C%E7%9A%84%E8%AE%B0%E5%BD%95">^2</a><br>&emsp; <code>git log</code>　　　　　　　　　<strong>查看提交日志</strong><br><br></p>
 <hr>
 <p><code>git config --global user.name &quot;cy&quot;</code><br><strong>设置git用户名</strong><br><code>git config --global user.email &quot;2305554859@pp.com&quot;</code><br><strong>设置git用户邮箱</strong><br><code>git config --global user.name</code><br><strong>查看git用户名</strong><br><code>git config --global user.email</code><br><strong>查看git用户邮箱</strong></p>
+<hr>
 <p><code>git reflog</code> 　 　　 　　　　<strong>查看所有版本</strong><br><code>git reset --hard HEAD^</code>　　 <strong>回退到上一版本</strong><br><code>git reset --hard 版本号</code>　　<strong>回退到指定版本</strong><br><code>git reset 版本号</code>　　　　　 <strong>比较当前和指定版本的不同</strong></p>
 <blockquote>
 <p>HEAD 代表当前版本    HEAD^ 代表上一版本   HEAD^^  代表再上一个版本 依次类推</p>
@@ -212,7 +211,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/17/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/10/17/git%E7%AC%94%E8%AE%B0/">展开全文 >></a>
         </p>
       
 
