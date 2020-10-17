@@ -6,19 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Hexo</title>
+  <title>git笔记 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="#git笔记 Git 会将当前版本文件与仓库中的上一个版本文件进行对比，并把所有的差异的文件打包到一起作为一个提交记录(或称快照)。   Git 中文件的三种状态 已提交(committed)、已修改(modified) 和 已暂存(staged)  已修改表示修改了文件，但还没保存到数据库中。 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。 已提交表示数据已经保存在本">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
+<meta property="og:title" content="git笔记">
 <meta property="og:url" content="http://example.com/2020/10/17/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="#git笔记 Git 会将当前版本文件与仓库中的上一个版本文件进行对比，并把所有的差异的文件打包到一起作为一个提交记录(或称快照)。   Git 中文件的三种状态 已提交(committed)、已修改(modified) 和 已暂存(staged)  已修改表示修改了文件，但还没保存到数据库中。 已暂存表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。 已提交表示数据已经保存在本">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/assets/2020-10-11__9-56-08.png">
+<meta property="og:image" content="http://example.com/assets/2020-10-11__10-07-14.png">
 <meta property="article:published_time" content="2020-10-17T01:28:45.170Z">
-<meta property="article:modified_time" content="2020-10-17T01:28:45.170Z">
+<meta property="article:modified_time" content="2020-10-17T04:14:48.347Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/assets/2020-10-11__9-56-08.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -149,7 +152,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      git笔记
     </h1>
   
 
@@ -162,19 +165,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="git笔记"><a href="#git笔记" class="headerlink" title="#git笔记"></a>#git笔记</h2><ul>
+<li><p>Git 会将<strong>当前版本文件</strong>与仓库中的<strong>上一个版本文件</strong>进行对比，并把所有的<strong>差异的文件</strong>打包到一起作为一个<strong>提交记录</strong><code>(或称快照)</code>。</p>
+<br>
+</li>
+<li><p>Git 中文件的三种状态 <strong><em>已提交(committed)、已修改(modified) 和 已暂存(staged)</em></strong></p>
+<ul>
+<li><strong>已修改</strong>表示修改了文件，但<strong>还没保存</strong>到数据库中。</li>
+<li><strong>已暂存</strong>表示对一个已修改文件的当前版本<strong>做了标记</strong>，使之包含在下次提交的快照中。</li>
+<li><strong>已提交</strong>表示数据<strong>已经保存在</strong>本地数据库中。<br>
+</li>
+</ul>
+</li>
+<li><p><strong><em>工作目录、暂存区域 和 Git 仓库</em></strong></p>
+<ul>
+<li><strong>工作区</strong>是对<strong>项目的某个版本独立提取出来的内容</strong>。这些从 <strong>Git 仓库</strong>的压缩数据库中提取出来的文件，放在<strong>磁盘上供你使用或修改</strong>。</li>
+<li><strong>暂存区</strong>是一个文件，保存了<strong>下次将要提交的</strong>文件列表信息，一般在 Git 仓库目录中。 <code>(按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”)</code></li>
+<li><strong>Git 仓库</strong>目录是 Git 用来保存<strong>项目的元数据和对象数据库</strong>的地方。 这是 <strong>Git 中最重要</strong>的部分，从其它计算机<strong>克隆仓库时，复制的就是这里的数据。</strong><br>
+</li>
+</ul>
+</li>
+<li><p>Git <strong>工作流程</strong>如下：</p>
+<ul>
+<li>在<strong>工作区</strong>中<strong>修改文件</strong>。</li>
+<li>将你<strong>想要下次提交的更改选择性地暂存</strong>，这样只会将<strong>更改的部分</strong>添加到暂存区。</li>
+<li><strong>提交</strong>更新，找到<strong>暂存区的文件</strong>，将<strong>快照存储到Git 仓库目录</strong>。</li>
+</ul>
+</li>
+</ul>
+<br>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>&emsp; <code>git commmit -a -m 注释</code>　　<strong>提交</strong><br>&emsp; <code>git branch 分支名</code> 　　 　　<strong>新建</strong> <strong><em>分支</em></strong><br>&emsp; <code>git checkout 分支名</code> 　 　　<strong>切换到</strong> <strong><em>分支</em></strong><br>&emsp; <code>git merge 分支名</code>　　　　　<strong>将</strong> <strong><em>分支</em></strong> <strong>合并到</strong> <strong><em>当前所在分支</em></strong> <a href="%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E5%8C%85%E6%8B%AC**%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AF**%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60%EF%BC%8C%E8%80%8C**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF**%E8%BF%98%E6%98%AF%E5%8F%AA%E5%8C%85%E6%8B%AC**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60**%E4%B8%8D%E5%8F%98%E3%80%82%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E6%8C%87%E5%90%91%E7%9A%84%E8%AE%B0%E5%BD%95%60(%E4%BF%AE%E6%94%B9)%60%E5%B0%86%E6%9C%89**%E4%B8%A4%E4%B8%AA%E7%88%B6%E8%AE%B0%E5%BD%95%60(%E4%BF%AE%E6%94%B9)%60**">^1</a><br>&emsp; <code>git rebase 分支名</code> 　 　　　<strong>将</strong> <strong><em>当前所在分支</em></strong> <strong>复制到</strong> <strong><em>分支</em></strong> <a href="%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E5%8C%85%E6%8B%AC**%E4%B8%A4%E4%B8%AA%E5%88%86%E6%94%AF**%E4%B8%8A%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60%EF%BC%8C%E8%80%8C**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF**%E8%BF%98%E6%98%AF%E5%8F%AA%E5%8C%85%E6%8B%AC**%E5%8F%A6%E4%B8%80%E4%B8%AA%E5%88%86%E6%94%AF%E7%9A%84%E4%BF%AE%E6%94%B9%60(%E8%AE%B0%E5%BD%95)%60**%E4%B8%8D%E5%8F%98%E3%80%82%E6%AD%A4%E6%97%B6**%E5%BD%93%E5%89%8D%E5%88%86%E6%94%AF**%E4%B8%8E%E5%8F%A6%E4%B8%80%E5%88%86%E6%94%AF%E4%B8%8D%E5%90%8C%E7%9A%84%E8%AE%B0%E5%BD%95">^2</a><br>&emsp; <code>git log</code>　　　　　　　　　<strong>查看提交日志</strong><br><br></p>
+<hr>
+<p><code>git config --global user.name &quot;cy&quot;</code><br><strong>设置git用户名</strong><br><code>git config --global user.email &quot;2305554859@pp.com&quot;</code><br><strong>设置git用户邮箱</strong><br><code>git config --global user.name</code><br><strong>查看git用户名</strong><br><code>git config --global user.email</code><br><strong>查看git用户邮箱</strong></p>
+<p><code>git reflog</code> 　 　　 　　　　<strong>查看所有版本</strong><br><code>git reset --hard HEAD^</code>　　 <strong>回退到上一版本</strong><br><code>git reset --hard 版本号</code>　　<strong>回退到指定版本</strong><br><code>git reset 版本号</code>　　　　　 <strong>比较当前和指定版本的不同</strong></p>
+<blockquote>
+<p>HEAD 代表当前版本    HEAD^ 代表上一版本   HEAD^^  代表再上一个版本 依次类推</p>
+</blockquote>
+<p><code>git branch -a</code> 　　 　 　　<strong>查看所有</strong> <strong><em>分支</em></strong><br><code>git checkout 分支名</code> 　　　<strong>切换到</strong> <strong><em>分支</em></strong><br><code>git checkout -b 分支名</code>　　<strong>创建同时切换到</strong> <strong><em>分支</em></strong><br><code>git branch -D 分支名</code>　　　<strong>删除</strong> <strong><em>分支</em></strong><br><code>git merge 分支名</code>　 　 　 　<strong>合并</strong> <strong><em>分支</em></strong></p>
+<p><img src="/assets/2020-10-11__9-56-08.png" alt="git merge"><br><br></p>
+<p><img src="/assets/2020-10-11__10-07-14.png" alt="git rebase"></p>
 
       
 
@@ -215,7 +245,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%AC%94%E8%AE%B0"><span class="toc-number">1.</span> <span class="toc-text">#git笔记</span></a></li></ol>
                     </div>
                 </span>
             </div>
