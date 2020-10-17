@@ -166,6 +166,27 @@
 <blockquote>
 <p>有关于git的笔记</p>
 </blockquote>
+<br>
+
+<ul>
+<li>Git 会将<strong>当前版本文件</strong>与仓库中的<strong>上一个版本文件</strong>进行对比，并把所有的<strong>差异的文件</strong>打包到一起作为一个<strong>提交记录</strong><code>(或称快照)</code>。</li>
+</ul>
+<ul>
+<li>Git 中文件的三种状态 <strong><em>已提交(committed)、已修改(modified) 和 已暂存(staged)</em></strong><ul>
+<li><strong>已修改</strong>表示修改了文件，但<strong>还没保存</strong>到数据库中。</li>
+<li><strong>已暂存</strong>表示对一个已修改文件的当前版本<strong>做了标记</strong>，使之包含在下次提交的快照中。</li>
+<li><strong>已提交</strong>表示数据<strong>已经保存在</strong>本地数据库中。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong><em>工作目录、暂存区域 和 Git 仓库</em></strong><ul>
+<li><strong>工作区</strong>是对<strong>项目的某个版本独立提取出来的内容</strong>。这些从 <strong>Git 仓库</strong>的压缩数据库中提取出来的文件，放在<strong>磁盘上供你使用或修改</strong>。</li>
+<li><strong>暂存区</strong>是一个文件，保存了<strong>下次将要提交的</strong>文件列表信息，一般在 Git 仓库目录中。 <code>(按照 Git 的术语叫做“索引”，不过一般说法还是叫“暂存区”)</code></li>
+<li><strong>Git 仓库</strong>目录是 Git 用来保存<strong>项目的元数据和对象数据库</strong>的地方。 这是 <strong>Git 中最重要</strong>的部分，从其它计算机<strong>克隆仓库时，复制的就是这里的数据。</strong></li>
+</ul>
+</li>
+</ul>
         
           <a class="article-more-a" href="/2020/10/17/git%E7%AC%94%E8%AE%B0/#more">继续阅读 >></a>
         
