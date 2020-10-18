@@ -820,7 +820,7 @@ body {
   background: #fff;
   width: 300px;
   position: fixed;
-  opacity: 0.8;
+  opacity: 0.84;
   transition: all .2s ease-in;
   height: 100%;
   z-index: 999
@@ -1605,7 +1605,7 @@ pre .css~* .id, pre .id {
   margin: 0 30px;
   padding-right: 60px;
   border-bottom: 1px solid #eee;
-  background: #fff
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .archives-wrap:first-child {
@@ -2037,7 +2037,7 @@ pre .css~* .id, pre .id {
   border: 1px solid #ddd;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  background: rgba(255,255,255,0.8);
+  background: rgba(248, 248, 248, 0.9);
   transition: all .2s ease-in
 }
 
