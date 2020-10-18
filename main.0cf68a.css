@@ -766,6 +766,8 @@ body {
   overflow-y: hidden;
   /*background: #eaeaea*/
   background-image:url('./wallroom.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
 }
 
 #container, body, html {
