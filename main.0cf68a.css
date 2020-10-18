@@ -320,7 +320,7 @@ body {
   line-height: 1.5;
   color: #333;
   /*background-color: #fff;*/
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/00/ChMkJlbKw6KIXhXnAA4L-_oxRzUAALG6QBUSg8ADgwT181.jpg') no-repeat 0% 0%/ cover;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/wallroom.jpg') no-repeat 0% 0%/ cover;
   min-height: 100%
 }
 
