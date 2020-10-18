@@ -320,7 +320,7 @@ body {
   line-height: 1.5;
   color: #333;
   /*background-color: #fff;*/
-    background-image:url('./wallroom.jpg');
+  background-image:url('./wallroom.jpg');
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -764,7 +764,8 @@ body, button, input, select, textarea {
 
 body {
   overflow-y: hidden;
-  background: #eaeaea
+  /*background: #eaeaea*/
+  background-image:url('./wallroom.jpg');
 }
 
 #container, body, html {
