@@ -3292,9 +3292,7 @@ pre .css~* .id, pre .id {
   }
 
   #mobile-nav .overlay {
-    height: 110px;
     position: absolute;
-    width: 100%;
     z-index: 2;
     background: #4d4d4d
   }
@@ -3354,6 +3352,7 @@ pre .css~* .id, pre .id {
     z-index: 1;
     border: 1px solid #a0a0a0;
     border-radius: 3px
+    background-color: #ffffffeb;
   }
 
   .header-menu li {
