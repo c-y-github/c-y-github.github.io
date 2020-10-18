@@ -3351,7 +3351,7 @@ pre .css~* .id, pre .id {
     z-index: 1;
     border: 1px solid #a0a0a0;
     border-radius: 4px;
-    background-color: #3b3b3bc9;
+    background-color: rgba(59,59,59,0.78);
   }
 
   .header-menu li {
