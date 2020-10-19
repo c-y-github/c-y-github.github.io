@@ -320,7 +320,8 @@ body {
   line-height: 1.5;
   color: #333;
   /*background-color: #fff;*/
-  background-image:url('./wallroom.jpg');
+  /*background-image:url('./wallroom.jpg');*/
+  background-image:url('http://i.loli.net/2020/10/19/P8jWdpKqfCbVUSF.jpg');
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
