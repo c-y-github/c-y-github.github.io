@@ -6,17 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2020 | c-y的主页</title>
+  <title>sql笔记 | c-y的主页</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="业余极客,擅长嵌入式开发和反汇编">
-<meta property="og:type" content="website">
-<meta property="og:title" content="c-y的主页">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+  <meta name="description" content="有关于 SQL 的笔记    SQL 基本数据类型   名称 类型 说明    INT 整型 4字节整数类型，范围约+&#x2F;-21亿   BIGINT 长整型 8字节整数类型，范围约+&#x2F;-922亿亿   REAL 浮点型 4字节浮点数，范围约+&#x2F;-1038   DOUBLE 浮点型 8字节浮点数，范围约+&#x2F;-10308   DECIMAL(M,N) 高精度小数 由用户指定精度的小数，例如，DEC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sql笔记">
+<meta property="og:url" content="http://example.com/2020/10/26/sql%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="c-y的主页">
-<meta property="og:description" content="业余极客,擅长嵌入式开发和反汇编">
+<meta property="og:description" content="有关于 SQL 的笔记    SQL 基本数据类型   名称 类型 说明    INT 整型 4字节整数类型，范围约+&#x2F;-21亿   BIGINT 长整型 8字节整数类型，范围约+&#x2F;-922亿亿   REAL 浮点型 4字节浮点数，范围约+&#x2F;-1038   DOUBLE 浮点型 8字节浮点数，范围约+&#x2F;-10308   DECIMAL(M,N) 高精度小数 由用户指定精度的小数，例如，DEC">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-26T10:04:12.835Z">
+<meta property="article:modified_time" content="2021-04-05T06:43:20.961Z">
 <meta property="article:author" content="CY">
-<meta property="article:tag" content="c-y的主页,c-y,cy">
+<meta property="article:tag" content="sql">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="c-y的主页" type="application/atom+xml">
@@ -141,36 +143,186 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-sql笔记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/26/sql%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-10-26T10:04:12.835Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-26</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/26/sql%E7%AC%94%E8%AE%B0/">sql笔记</a>
+    <h1 class="article-title" itemprop="name">
+      sql笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/10/26/sql%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-10-26T10:04:12.835Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-26</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <br>
+
+<blockquote>
+<p>有关于 SQL 的笔记</p>
+</blockquote>
+<br>
+
+<h1 id="SQL-基本数据类型"><a href="#SQL-基本数据类型" class="headerlink" title="SQL 基本数据类型"></a>SQL 基本数据类型</h1><table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">INT</td>
+<td align="center">整型</td>
+<td>4字节整数类型，范围约+/-21亿</td>
+</tr>
+<tr>
+<td align="center">BIGINT</td>
+<td align="center">长整型</td>
+<td>8字节整数类型，范围约+/-922亿亿</td>
+</tr>
+<tr>
+<td align="center">REAL</td>
+<td align="center">浮点型</td>
+<td>4字节浮点数，范围约+/-1038</td>
+</tr>
+<tr>
+<td align="center">DOUBLE</td>
+<td align="center">浮点型</td>
+<td>8字节浮点数，范围约+/-10308</td>
+</tr>
+<tr>
+<td align="center">DECIMAL(M,N)</td>
+<td align="center">高精度小数</td>
+<td>由用户指定精度的小数，例如，DECIMAL(20,10)表示一共20位，其中小数10位，通常用于财务计算</td>
+</tr>
+<tr>
+<td align="center">CHAR(N)</td>
+<td align="center">定长字符串</td>
+<td>存储指定长度的字符串，例如，CHAR(100)总是存储100个字符的字符串</td>
+</tr>
+<tr>
+<td align="center">VARCHAR(N)</td>
+<td align="center">变长字符串</td>
+<td>存储可变长度的字符串，例如，VARCHAR(100)可以存储0~100个字符的字符串</td>
+</tr>
+<tr>
+<td align="center">BOOLEAN</td>
+<td align="center">布尔类型</td>
+<td>存储True或者False</td>
+</tr>
+<tr>
+<td align="center">DATE</td>
+<td align="center">日期类型</td>
+<td>存储日期，例如，2018-06-22</td>
+</tr>
+<tr>
+<td align="center">TIME</td>
+<td align="center">时间类型</td>
+<td>存储时间，例如，12:20:59</td>
+</tr>
+<tr>
+<td align="center">DATETIME</td>
+<td align="center">日期和时间类型</td>
+<td>存储日期+时间，例如，2018-06-22 12:20:59</td>
+</tr>
+<tr>
+<td align="center"><br></td>
+<td align="center"></td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>表的每一<strong>行</strong>被称为<strong>记录</strong>（Record）</p>
+<br>
+</li>
+<li><p>表的每一<strong>列</strong>被称为<strong>字段</strong>（Column）</p>
+</li>
+</ul>
+<a id="more"></a>
+
+<br>
+
+<ul>
+<li><p>一个整型字段如果为 <code>NULL</code> 不表示它的值为<code>0</code><br>同样的，一个字符串型字段为 <code>NULL </code> 也不表示它的值为空串 <code> &#39;&#39;</code></p>
+<br>
+</li>
+<li><p>通常情况下，字段应该避免允许为NULL。<br>这样可以简化查询条件，加快查询速度，也利于应用程序读取数据后无需判断是否为<code>NULL</code>。</p>
+</li>
+</ul>
+<ul>
+<li>对于关系表，有个很重要的约束，就是<strong>任意两条记录不能重复</strong>。<br>不能重复，<strong>不是</strong>指两条记录不完全相同，而是指能够<strong>通过某个字段区分出唯一的记录</strong>，这个<strong>用来区分记录的字段被称为主键</strong>。</li>
+</ul>
+<ul>
+<li>对主键的要求，最关键的一点是：记录一旦插入到表中，<strong>主键最好不要再修改</strong>，因为主键是用来唯一定位记录的，修改了主键，会造成一系列的影响。</li>
+</ul>
+<ul>
+<li>关系数据库实际上还允许通过多个字段唯一标识记录，即两个或更多的字段都设置为主键，这种主键被称为<strong>联合主键</strong>。对于联合主键，允许一列有重复，只要不是所有主键列都重复即可：</li>
+</ul>
+<ul>
+<li>没有必要的情况下，我们<strong>尽量不使用联合主键</strong>，因为它给关系表带来了<strong>复杂度的上升</strong>。</li>
+</ul>
+<ul>
+<li>通过定义外键约束，关系数据库可以保证无法插入无效的数据。即如果 <code>classes</code> 表不存在 <code>id=99</code> 的记录，<code>students</code> 表就无法插入 <code>class_id=99</code> 的记录</li>
+</ul>
+<ul>
+<li><strong>外键约束会降低数据库的性能</strong>，大部分互联网应用程序为了追求速度，并<strong>不设置外键约束</strong>，而是仅靠<strong>应用程序自身来保证逻辑的正确性</strong>。这种情况下，<code>class_id</code>  仅仅是一个普通的列，只是它起到了外键的作用而已</li>
+</ul>
+<ul>
+<li>有一些应用会把一个大表拆成两个一对一的表，目的是把经常读取和不经常读取的字段分开，以获得更高的性能。例如，把一个大的用户表分拆为用户基本信息表 <code>user_info</code> 和用户详细信息表  <code>user_profiles</code> ，大部分时候，只需要查询 <code>user_info</code> 表，并不需要查询 <code>user_profiles</code> 表，这样就提高了查询速度。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE students</span><br><span class="line">ADD INDEX idx_score (score);</span><br></pre></td></tr></table></figure>
+
+<p>对 <code>students </code> 表的 <code>score</code> 字段创建索引</p>
+<ul>
+<li>通过创建唯一索引，可以保证某一列的值具有唯一性。</li>
+</ul>
+<ul>
+<li>对于主键，关系数据库会<strong>自动对其创建主键索引</strong>。使用主键索引的效率是最高的，因为<strong>主键会保证绝对唯一</strong>。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ALTER TABLE students</span><br><span class="line">ADD CONSTRAINT uni_name UNIQUE (name);</span><br></pre></td></tr></table></figure>
+
+<p>对 <code>students </code> 表的 <code>name</code> 字段添加一个 唯一约束</p>
+<p>UNIQUE  ==唯一==</p>
+<p>CONSTRAINT  ==约束==</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM students;</span><br></pre></td></tr></table></figure>
+
+<p>在 <code>students </code> 表中查询 <code>所有</code> 字段（列）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT name FROM students;</span><br></pre></td></tr></table></figure>
+
+<p>在 <code>students </code> 表中查询 <code>name</code> 字段（列）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT 100+200;</span><br></pre></td></tr></table></figure>
+
+<p>计算 <code>100+200</code> 返回 <code>300</code></p>
+<p>不带 <code>FROM</code> 子句的 <code>SELECT</code> 语句有一个有用的用途，就是用来判断当前到数据库的连接是否有效。许多检测工具会执行一条 <code>SELECT 1;</code> 来测试数据库连接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT 1;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM &lt;表名&gt; WHERE &lt;条件表达式&gt;</span><br></pre></td></tr></table></figure>
+
+<p>条件查询的语法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT * FROM students WHERE score &gt;&#x3D; 80 AND gender &#x3D; &#39;M&#39;;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>查找   <code>score</code>  字段大于等于 80，<code>gender</code>  字段等于  ‘M’，的记录</p>
+<p>（ 查找   <code>score</code>  这列大于等于 80，<code>gender</code>  这列等于  ‘M’，的行 ）</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -182,57 +334,77 @@
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/10/17/git%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2020-10-17T01:28:45.170Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-17</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2021/04/05/%E7%8F%AD%E6%9C%8D%E7%AE%80%E4%BB%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          班服简介
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/10/17/git%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">git笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/10/17/git%E7%AC%94%E8%AE%B0/">git笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SQL-%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">SQL 基本数据类型</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -255,8 +427,8 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
