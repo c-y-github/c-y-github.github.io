@@ -126,9 +126,9 @@
             }
         }
         function 载入() {
-            $.ajax({
+          $.ajax({
                 url: "res/物理必修二曲线运动.json", success: function (result) {
-                    课程表 = JSON.parse(result).data.items[0].data;
+                  课程表 = result.data.items[0].data;
                     for (i = 0; i < 课程表.length; i++) {
                         if (课程表[i].video != "") {
                             if (课程表[i].brief == null)
