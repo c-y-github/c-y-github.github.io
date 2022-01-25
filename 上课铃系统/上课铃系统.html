@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>上课铃系统</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="上课铃系统.js"></script>
+    <link href="上课铃系统.css" rel="stylesheet" type="text/css"/>
+</head>
+<body id="整体" onload="initialization()">
+<svg id="圆形进度槽" viewBox="0 0 428 455" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>
+            .cls-2 {
+                fill: #ebecf0;
+            }
+
+            .cls-3 {
+                filter: url(#_3);
+            }
+
+            .cls-4 {
+                filter: url(#_4);
+            }
+
+            .cls-5 {
+                filter: url(#_5);
+            }
+
+            .cls-6 {
+                filter: url(#_6);
+            }
+
+            .st2 {
+                filter: url(#_1);
+            }
+
+        </style>
+        <filter id="_6" filterUnits="userSpaceOnUse" height="191" width="191" x="125.5" y="125.5">
+            <feOffset dx="7" dy="7" input="SourceAlpha"/>
+            <feGaussianBlur result="blur" stdDeviation="7.5"/>
+            <feFlood flood-color="#b2b6c4"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_5" filterUnits="userSpaceOnUse" height="191" width="191" x="111.5" y="111.5">
+            <feOffset dx="-7" dy="-7" input="SourceAlpha"/>
+            <feGaussianBlur result="blur-2" stdDeviation="7.5"/>
+            <feFlood flood-color="#fff" flood-opacity="0.698"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_4" filterUnits="userSpaceOnUse" height="365" width="365" x="38.5" y="38.5">
+            <feOffset dx="7" dy="7" input="SourceAlpha"/>
+            <feGaussianBlur result="blur-3" stdDeviation="7.5"/>
+            <feFlood flood-color="#b2b6c4"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_3" filterUnits="userSpaceOnUse" height="365" width="365" x="24.5" y="24.5">
+            <feOffset dx="-7" dy="-7" input="SourceAlpha"/>
+            <feGaussianBlur result="blur-4" stdDeviation="7.5"/>
+            <feFlood flood-color="#fff" flood-opacity="0.698"/>
+            <feComposite in2="blur-4" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="_1" xmlns="http://www.w3.org/2000/svg"  x="46" y="46" width="340" height="340" filterUnits="userSpaceOnUse">
+            <feOffset dx="2" dy="2" input="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="10" result="blur-15"/>
+            <feFlood flood-color="#ff6c00"/>
+            <feComposite operator="in" in2="blur-15"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <linearGradient id="SVG_ID_1" gradientUnits="userSpaceOnUse" x1="73%" y1="27%" x2="27%" y2="73%">
+            <stop offset="0" style="stop-color:#F2A870"/>
+            <stop offset="1" style="stop-color:#EA7A28"/>
+        </linearGradient>
+        <linearGradient id="SVG_ID_2" gradientUnits="userSpaceOnUse" x1="73%" y1="27%" x2="27%" y2="73%">
+            <stop offset="0" style="stop-color:rgba(242,168,112,0)"/>
+            <stop offset="1" style="stop-color:#EA7A28"/>
+        </linearGradient>
+    </defs>
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <rect class="cls-2" height="146" rx="73" transform="translate(141 141)"
+              width="146"/>
+    </g>
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <rect class="cls-2" height="146" rx="73" transform="translate(141 141)"
+              width="146"/>
+    </g>
+    <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path class="cls-2"
+              d="M160,320a161.183,161.183,0,0,1-32.246-3.251,159.124,159.124,0,0,1-57.212-24.075,160.467,160.467,0,0,1-57.969-70.4,159.2,159.2,0,0,1-9.323-30.034,161.561,161.561,0,0,1,0-64.491A159.125,159.125,0,0,1,27.326,70.543a160.467,160.467,0,0,1,70.4-57.969,159.2,159.2,0,0,1,30.034-9.323,161.561,161.561,0,0,1,64.491,0,159.125,159.125,0,0,1,57.212,24.075,160.468,160.468,0,0,1,57.969,70.4,159.2,159.2,0,0,1,9.323,30.034,161.561,161.561,0,0,1,0,64.491,159.124,159.124,0,0,1-24.075,57.212,160.468,160.468,0,0,1-70.4,57.969,159.192,159.192,0,0,1-30.034,9.323A161.183,161.183,0,0,1,160,320Zm0-300C82.8,20,20,82.8,20,160S82.8,300,160,300s140-62.8,140-140S237.2,20,160,20Z"
+              transform="translate(54 54)"/>
+    </g>
+    <g class="cls-3" transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path class="cls-2"
+              d="M160,320a161.183,161.183,0,0,1-32.246-3.251,159.124,159.124,0,0,1-57.212-24.075,160.467,160.467,0,0,1-57.969-70.4,159.2,159.2,0,0,1-9.323-30.034,161.561,161.561,0,0,1,0-64.491A159.125,159.125,0,0,1,27.326,70.543a160.467,160.467,0,0,1,70.4-57.969,159.2,159.2,0,0,1,30.034-9.323,161.561,161.561,0,0,1,64.491,0,159.125,159.125,0,0,1,57.212,24.075,160.468,160.468,0,0,1,57.969,70.4,159.2,159.2,0,0,1,9.323,30.034,161.561,161.561,0,0,1,0,64.491,159.124,159.124,0,0,1-24.075,57.212,160.468,160.468,0,0,1-70.4,57.969,159.192,159.192,0,0,1-30.034,9.323A161.183,161.183,0,0,1,160,320Zm0-300C82.8,20,20,82.8,20,160S82.8,300,160,300s140-62.8,140-140S237.2,20,160,20Z"
+              transform="translate(54 54)"/>
+    </g>
+    <circle class="st st1" cx="214" cy="214" r="106.5"/>
+    <circle class="st st2" cx="214" cy="214" r="106.5"/>
+</svg>
+<div id="状态栏">
+    <span class="状态栏文本 文本暗"></span>
+    <span class="状态栏文本 文本亮"></span>
+</div>
+<div>
+    <div class="按钮暗 按钮">
+        <span class="按钮文本 文本暗 开关">开始</span>
+    </div>
+    <div class="按钮亮 按钮" onclick="Switch()">
+        <span class="按钮文本 文本亮 开关">开始</span>
+    </div>
+</div>
+<div>
+    <div class="按钮暗 按钮">
+        <span class="按钮文本 文本暗">测试</span>
+    </div>
+    <div class="按钮亮 按钮" onclick="Have_a_test()">
+        <span class="按钮文本 文本亮">测试</span>
+    </div>
+</div>
+</body>
+</html>

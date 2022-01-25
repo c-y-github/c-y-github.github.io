@@ -1,0 +1,79 @@
+@font-face {
+    font-family: '幼圆';
+    src: url('SIMYOU.TTF');
+}
+
+#整体 {
+    background-color: #ebecf0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#状态栏 {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.状态栏文本{
+    position: absolute;
+    top: 42.15%;
+    transform: translateX(-50%);
+    font-family: 幼圆, system-ui;
+    color: #74809A;
+    font-size: 9vw;
+}
+
+.按钮文本 {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -51%);
+    font-family: 幼圆, system-ui;
+    color: #74809A;
+    font-size: 10vw;
+}
+
+.文本亮 {
+    text-shadow: -0.25vw -0.28vw 0.38vw #FFFFFF;
+}
+
+.文本暗 {
+    text-shadow: 0.19vw 0.19vw 0.4vw #b2b6c4;
+}
+
+.按钮 {
+    position: relative;
+    height: 18.75vw;
+    width: 60vw;
+    left: 20vw;
+    border-radius: 4vw;
+}
+
+.按钮暗 {
+    box-shadow: 1.5vw 1.5vw 4vw #b2b6c4;
+}
+
+.按钮亮 {
+    box-shadow: -1.6vw -1.6vw 4vw rgba(255, 255, 255, 0.80);
+    margin: -18.75vw 0 10vw 0;
+}
+
+.st {
+    fill: rgba(255, 255, 255, 0);
+    stroke-width: 67;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 670, 670;
+    transform-origin:  50% 47.032967%;
+    transform: rotate(270deg);
+}
+.st1{
+    stroke: url(#SVG_ID_1);
+}
+
+.st2{
+    stroke: url(#SVG_ID_2);
+}
