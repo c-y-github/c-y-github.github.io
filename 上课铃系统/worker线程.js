@@ -63,7 +63,7 @@ function Get_C_C(current_time){ //获取当前内容
 
     while (TimeTable[index].time < current_time){
         index++;
-        if(index > TimeTable.length) return a_s; //如果晚于整个时间表
+        if(index > TimeTable.length - 1) return a_s; //如果晚于整个时间表
     }
 
     return TimeTable[index-1];
@@ -78,7 +78,7 @@ function Get_N_C(current_time){ //获取下一内容
 
     while (TimeTable[index].time < current_time){
         index++;
-        if(index > TimeTable.length) return {time: new Date(new Date(a_s.time).setDate(a_s.time.getDate() + 1)),content: a_s.content,bell: a_s.bell}; //如果晚于整个时间表
+        if(index > TimeTable.length - 1) return {time: new Date(new Date(a_s.time).setDate(a_s.time.getDate() + 1)),content: a_s.content,bell: a_s.bell}; //如果晚于整个时间表
     }
 
     return TimeTable[index];
@@ -110,7 +110,6 @@ function timer(last_time){
     if(high_speed_model){
         setTimeout(timer,cycle);
     }else {
-        if(false){
 
         let C_T = new Date();
         let C_C = Get_C_C(C_T);
@@ -142,5 +141,4 @@ function timer(last_time){
         // console.log(average_value);
         let current_time = performance.now()
         setTimeout(timer,(cycle * 1.4) - ((current_time - last_time) * 0.4) + ((cycle - average_value) * 0.2 ), current_time);
-    }
 }

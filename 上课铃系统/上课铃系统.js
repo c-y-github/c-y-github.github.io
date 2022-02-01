@@ -4,6 +4,7 @@ let worker;
 const bell_1 = new Audio("上课铃.wav");
 const bell_2 = new Audio("下课铃.wav");
 const bell_3 = new Audio("上课铃.wav");
+let load_finished = false;
 
 function initialization(){ //初始化
     $("#状态栏").height($("#圆形进度槽").height());
@@ -19,6 +20,7 @@ function initialization(){ //初始化
             let its_time = TimeTable[i].time.split(":");
             TimeTable[i].time = new Date(new Date().setHours(its_time[0],its_time[1],0,0));
         }
+        load_finished = true;
     })
 }
 
@@ -43,6 +45,8 @@ window.onresize = ()=>{ //高度同步
 }
 
 function Switch(){
+    if(!load_finished)
+        return;
     let Switches = $(".开关");
     if(Switches.text() === "开始开始"){
         Switches.text("结束");
