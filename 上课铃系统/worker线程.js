@@ -1,7 +1,7 @@
 let TimeTable;
 let high_speed_model = true;
-const cycle = 100;
-const radius = 669.159236;
+const cycle = 320;
+const radius = 669.1592;
 let C_B_Timestamp;
 let C_E_Timestamp;
 let Plan_Timestamp;
@@ -134,11 +134,14 @@ function timer(last_time){
         }
 
         postMessage(massage);
-    }
+
+        //
+
         performance_analysis.Record_T_P();
         // performance_analysis.S_T_M_R_T_Interval();
         let average_value = performance_analysis.C_T_I_A_V();
         // console.log(average_value);
         let current_time = performance.now()
         setTimeout(timer,(cycle * 1.4) - ((current_time - last_time) * 0.4) + ((cycle - average_value) * 0.2 ), current_time);
+    }
 }

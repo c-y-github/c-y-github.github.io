@@ -1,5 +1,5 @@
 let TimeTable;
-const radius = 669.159236;
+const radius = 669.1592;
 let worker;
 const bell_1 = new Audio("上课铃.wav");
 const bell_2 = new Audio("下课铃.wav");
