@@ -1,1 +1,45 @@
-[{"time":"07:45","content":"自习","bell":"上课铃"},{"time":"07:55","content":"自习","bell":"上课铃"},{"time":"08:35","content":"课间","bell":"下课铃"},{"time":"08:40","content":"自习","bell":"上课铃"},{"time":"09:20","content":"课间","bell":"下课铃"},{"time":"09:25","content":"自习","bell":"上课铃"},{"time":"10:05","content":"课间","bell":"下课铃"},{"time":"10:15","content":"自习","bell":"上课铃"},{"time":"11:05","content":"课间","bell":"下课铃"},{"time":"11:10","content":"自习","bell":"上课铃"},{"time":"12:00","content":"午休","bell":"下课铃"},{"time":"13:20","content":"自习","bell":"上课铃"},{"time":"13:30","content":"自习","bell":"上课铃"},{"time":"14:10","content":"课间","bell":"下课铃"},{"time":"14:15","content":"自习","bell":"上课铃"},{"time":"16:15","content":"课间","bell":"下课铃"},{"time":"16:20","content":"自习","bell":"上课铃"},{"time":"17:00","content":"晚饭","bell":"下课铃"},{"time":"17:40","content":"答疑","bell":"上课铃"},{"time":"18:40","content":"课间","bell":"下课铃"},{"time":"18:50","content":"答疑","bell":"上课铃"},{"time":"19:50","content":"课间","bell":"下课铃"},{"time":"20:00","content":"答疑","bell":"上课铃"},{"time":"21:00","content":"课间","bell":"下课铃"},{"time":"21:05","content":"自习","bell":"上课铃"},{"time":"21:45","content":"放学","bell":"下课铃"}]
+[
+{
+  "time": "07:20", "content": "自习", "bell": "上课铃"
+}, {
+  "time": "07:40", "content": "物理", "bell": "上课铃"
+}, {
+  "time": "08:30", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "08:40", "content": "英语", "bell": "上课铃"
+}, {
+  "time": "09:30", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "09:40", "content": "化学", "bell": "上课铃"
+}, {
+  "time": "10:30", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "10:40", "content": "生物", "bell": "上课铃"
+}, {
+  "time": "11:30", "content": "午休", "bell": "下课铃"
+}, {
+  "time": "14:00", "content": "数学", "bell": "上课铃"
+}, {
+  "time": "14:50", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "15:00", "content": "语文", "bell": "上课铃"
+}, {
+  "time": "15:50", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "16:10", "content": "自习", "bell": "上课铃"
+}, {
+  "time": "17:00", "content": "晚休", "bell": "下课铃"
+}, {
+  "time": "18:00", "content": "晚一", "bell": "上课铃"
+}, {
+  "time": "19:00", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "19:10", "content": "晚二", "bell": "上课铃"
+}, {
+  "time": "20:10", "content": "课间", "bell": "下课铃"
+}, {
+  "time": "20:20", "content": "晚三", "bell": "上课铃"
+}, {
+  "time": "21:20", "content": "放学", "bell": "下课铃"
+}
+]
